@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WDIPT? – Where Did I Put That? | iPhone app to remember where things are</title>
+<meta name="description" content="WDIPT? is a free iPhone app that remembers where you put the things you only need once in a while. Log it in one line or tell Siri, share the list with your family, and find it in 3D.">
+<link rel="canonical" href="https://wdipt.app/">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#F2C230">
+<meta name="apple-itunes-app" content="app-id=6818586194">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="WDIPT?">
+<meta property="og:title" content="WDIPT? – Where Did I Put That?">
+<meta property="og:description" content="The iPhone app that remembers where you put things.">
+<meta property="og:url" content="https://wdipt.app/">
+<meta property="og:image" content="https://wdipt.app/img/icon-512.png">
+<meta name="twitter:card" content="summary">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "WDIPT?",
+  "alternateName": ["WDIPT", "Where Did I Put That?"],
+  "url": "https://wdipt.app/",
+  "sameAs": ["https://apps.apple.com/us/app/wdipt/id6818586194"],
+  "operatingSystem": "iOS 17.4 or later",
+  "applicationCategory": "ProductivityApplication",
+  "image": "https://wdipt.app/img/icon-512.png",
+  "description": "An iPhone app that remembers where you put the things you only need once in a while.",
+  "inLanguage": ["en", "de", "fr", "tr"],
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+
+<style>
+  :root {
+    --yellow: #F2C230;
+    --navy: #18243D;
+    --navy-2: #222F4B;
+    --ink-soft: #3C4557;
+    --on-navy: #FFFFFF;
+    --on-navy-soft: #C5CCDA;
+    --paper: #FFFDF6;
+    --line: #E7E1CD;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--navy);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  a:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; border-radius: 4px; }
+  h1, h2, h3 { line-height: 1.1; margin: 0; letter-spacing: -0.02em; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  /* Hero */
+  .hero { background: var(--yellow); overflow: hidden; }
+  .brand { display: flex; align-items: center; gap: 10px; padding: 20px 0; font-weight: 800; font-size: 19px; text-decoration: none; }
+  .brand img { width: 36px; height: 36px; border-radius: 9px; box-shadow: 0 0 0 1.5px var(--navy); }
+  .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: start; }
+  .hero-text { padding: 48px 0 88px; }
+  h1 { font-size: clamp(44px, 7.4vw, 84px); font-weight: 850; }
+  .lede { font-size: clamp(19px, 2.2vw, 23px); line-height: 1.4; margin: 22px 0 30px; max-width: 30em; color: var(--navy); }
+  .cta {
+    display: inline-block; padding: 15px 26px; border-radius: 14px;
+    background: var(--navy); color: var(--on-navy);
+    font-weight: 700; font-size: 18px; text-decoration: none;
+  }
+  .cta:hover { background: var(--navy-2); }
+  .fine { margin: 14px 0 0; font-size: 15px; color: var(--ink-soft); }
+  .hero-shot { justify-self: center; width: min(100%, 400px); margin-bottom: -2px; }
+
+  /* Sections */
+  section { padding: 80px 0; }
+  h2 { font-size: clamp(30px, 4.4vw, 44px); font-weight: 800; }
+  .sub { margin: 12px 0 0; font-size: 19px; color: var(--ink-soft); max-width: 36em; }
+
+  /* Steps */
+  .steps { list-style: none; counter-reset: s; margin: 40px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+  .steps li { counter-increment: s; }
+  .steps li::before {
+    content: counter(s); display: grid; place-items: center;
+    width: 40px; height: 40px; margin-bottom: 14px; border-radius: 50%;
+    background: var(--yellow); font-weight: 800;
+  }
+  .steps h3 { font-size: 21px; margin-bottom: 6px; }
+  .steps p, .feature p, .faq p { margin: 0; }
+  .steps p { color: var(--ink-soft); }
+  .quote { font-weight: 600; color: var(--navy); }
+
+  /* Gallery */
+  .gallery-band { background: var(--yellow); padding: 72px 0 0; }
+  .gallery {
+    display: flex; gap: 8px; margin-top: 32px; padding: 0 max(24px, calc((100vw - 1032px) / 2));
+    overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: none;
+  }
+  .gallery::-webkit-scrollbar { display: none; }
+  .gallery img { flex: 0 0 auto; width: 300px; scroll-snap-align: center; }
+
+  /* Features */
+  .features { background: var(--navy); color: var(--on-navy); }
+  .features .sub { color: var(--on-navy-soft); }
+  .feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 36px; margin-top: 44px; }
+  .feature h3 { font-size: 20px; margin-bottom: 8px; color: var(--yellow); }
+  .feature p { color: var(--on-navy-soft); font-size: 16px; }
+
+  /* Privacy */
+  .privacy-list { display: flex; flex-wrap: wrap; gap: 10px; margin: 28px 0 0; padding: 0; list-style: none; }
+  .privacy-list li { padding: 8px 15px; border: 1.5px solid var(--navy); border-radius: 999px; font-weight: 600; font-size: 15px; }
+
+  /* FAQ */
+  .faq-band { border-top: 1px solid var(--line); }
+  .faq { max-width: 44em; margin-top: 32px; }
+  .faq h3 { font-size: 19px; margin: 28px 0 6px; }
+  .faq p { color: var(--ink-soft); }
+
+  /* Closing */
+  .closing { background: var(--yellow); text-align: center; }
+  .closing h2 { margin-bottom: 26px; }
+
+  footer { background: var(--navy); color: var(--on-navy-soft); padding: 30px 0; font-size: 15px; }
+  .foot { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+  .foot nav { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+  .foot a { color: var(--on-navy); }
+
+  @media (max-width: 820px) {
+    section { padding: 60px 0; }
+    .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 0; }
+    .hero-text { padding: 28px 0 36px; }
+    .hero-shot { width: min(100%, 320px); }
+    .steps { grid-template-columns: minmax(0, 1fr); gap: 26px; }
+    .feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; }
+    .gallery img { width: 250px; }
+  }
+  @media (max-width: 520px) {
+    .wrap { padding: 0 16px; }
+    .feature-grid { grid-template-columns: minmax(0, 1fr); }
+    .gallery { padding: 0 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="img/icon-512.png" alt="" width="36" height="36">WDIPT?</a>
+    <div class="hero-grid">
+      <div class="hero-text">
+        <h1>Where did I put that?</h1>
+        <p class="lede">WDIPT? remembers where you put the things you only need once in a while, like your passport, the holiday decorations or the spare key.</p>
+        <a class="cta" href="https://apps.apple.com/us/app/wdipt/id6818586194">Get it on the App Store</a>
+        <p class="fine">Free for iPhone. Requires iOS 17.4 or later.</p>
+      </div>
+      <img class="hero-shot" src="img/02-home.jpg" width="660" height="1434"
+           alt="The WDIPT? home screen, listing a passport, birth certificates and holiday decorations by place, with a missing drill at the top.">
+    </div>
+  </div>
+</header>
+
+<main>
+  <section aria-labelledby="how">
+    <div class="wrap">
+      <h2 id="how">Put it away. Find it months later.</h2>
+      <ol class="steps">
+        <li>
+          <h3>Log it in one line</h3>
+          <p class="quote">“Passport, office, top drawer, blue folder.”</p>
+          <p>Add a photo of the spot if you like. Your places become one-tap chips.</p>
+        </li>
+        <li>
+          <h3>Or just tell Siri</h3>
+          <p>Log things with your hands full, from AirPods, the Action Button or Camera Control.</p>
+        </li>
+        <li>
+          <h3>Search and go straight there</h3>
+          <p>See the place, the time and the photo. In a scanned room, follow the arrow and radar to the exact spot.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="gallery-band">
+    <div class="wrap">
+      <h2>See it in the app</h2>
+    </div>
+    <div class="gallery" tabindex="0" role="group" aria-label="App screenshots. Scroll sideways to see more.">
+      <img loading="lazy" src="img/01-radar.jpg" width="660" height="1434" alt="Find the box, not just the room: labels and a distance readout over two real boxes in the camera view.">
+      <img loading="lazy" src="img/03-box.jpg" width="660" height="1434" alt="Know what's in every box: a photo of a box's contents with a list of the things inside.">
+      <img loading="lazy" src="img/05-log.jpg" width="660" height="1434" alt="Put it in a box in one tap: the screen for logging a new item.">
+      <img loading="lazy" src="img/04-missing.jpg" width="660" height="1434" alt="Lost it? Check these first: where a missing drill was last seen and the other places it has been.">
+      <img loading="lazy" src="img/06-moved.jpg" width="660" height="1434" alt="Moved the box? Its things follow: a box with four items and its new location.">
+    </div>
+  </div>
+
+  <section class="features" aria-labelledby="features">
+    <div class="wrap">
+      <h2 id="features">Made for a whole household</h2>
+      <p class="sub">One person puts it away, another one needs it three months later.</p>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Share with your family</h3>
+          <p>Everyone sees the same list and keeps it up to date, with a notification when someone can't find something.</p>
+        </div>
+        <div class="feature">
+          <h3>Find it in 3D</h3>
+          <p>Scan a room once, pin the exact spot, then follow the “getting warmer” haptics. Extra accurate on Pro models with LiDAR.</p>
+        </div>
+        <div class="feature">
+          <h3>Boxes and shelves</h3>
+          <p>See what's inside every box at a glance. Move the box and everything in it follows.</p>
+        </div>
+        <div class="feature">
+          <h3>When something goes missing</h3>
+          <p>Mark it “Can't find it” and see every place it has been, most recent first.</p>
+        </div>
+        <div class="feature">
+          <h3>Forgotten things</h3>
+          <p>See what you haven't touched in six months, then sell or lend it in a tap.</p>
+        </div>
+        <div class="feature">
+          <h3>Widgets</h3>
+          <p>Tap once to log from your Home Screen or Lock Screen, and see what's missing at a glance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="private">
+    <div class="wrap">
+      <h2 id="private">Your stuff stays yours</h2>
+      <p class="sub">Your items stay on your iPhone, or in your own iCloud when you share with family.</p>
+      <ul class="privacy-list">
+        <li>No account</li>
+        <li>No ads</li>
+        <li>No tracking</li>
+        <li>Face ID lock</li>
+        <li>Names hidden on the Lock Screen</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="faq-band" aria-labelledby="questions">
+    <div class="wrap">
+      <h2 id="questions">Questions</h2>
+      <div class="faq">
+        <h3>What does WDIPT stand for?</h3>
+        <p>“Where Did I Put That?” Look for WDIPT? on the App Store.</p>
+        <h3>Is this the same as other sites called WDIPT?</h3>
+        <p>This page and the iPhone app are the only official home of this app. Other sites using the same letters are not connected to it, and the app never asks you to sign in on a website.</p>
+        <h3>Which iPhones does it work on?</h3>
+        <p>Any iPhone on iOS 17.4 or later. Finding things in 3D works on recent iPhones and is more accurate on Pro models with LiDAR.</p>
+        <h3>Which languages does it speak?</h3>
+        <p>English, German, French and Turkish.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap">
+      <h2>Now you'll know.</h2>
+      <a class="cta" href="https://apps.apple.com/us/app/wdipt/id6818586194">Get it on the App Store</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>WDIPT? – Where Did I Put That?</span>
+    <nav aria-label="Footer">
+      <a href="https://nazliozemrek.github.io/wdipt-support/#support">Support</a>
+      <a href="https://nazliozemrek.github.io/wdipt-support/#privacy">Privacy</a>
+      <a href="https://apps.apple.com/us/app/wdipt/id6818586194">App Store</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
